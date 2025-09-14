@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              bebas: ['"Bebas Neue"', "sans-serif"],
+              roboto: ['"Roboto"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <section class="bg-yellow-100 font-roboto">
+        <!-- Navbar Section -->
+      <nav
+        class="pt-[39px] px-[10px] mx-auto flex justify-between max-w-[1440px] items-center">
+        <div class="max-w-xs">
+          <img class="max-w-full" src="icons/logo.png" alt="" />
+        </div>
+
+        <div class="font-semibold flex gap-[55px]">
+          <div>Home</div>
+          <div>Product</div>
+          <div>About Us</div>
+          <div>Conatact Us</div>
+        </div>
+      </nav>
+
+      <!-- Banner-image and title section -->
+
+      <div
+        class="flex max-w-[1440px] justify-between mx-auto px-[10px] pt-[60px] items-center pb-[130px]">
+        <div class="max-w-[430px]">
+          <p class="text-[5rem] font-bebas uppercase text-amber-500">
+            Be the Penguins
+          </p>
+          <p class="text-[80px] font-bebas">of Winter</p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit,
+            possimus.
+          </p>
+          <button
+            class="flex gap-[10px] rounded-[10px] mt-[8px] bg-lime-500 px-[33px] py-[18px]">
+            <span><img class="max-w-[20px]" src="icons/shopping-cart 1.png" alt=""/></span>
+            <span class="uppercase text-white font-semibold">Buy Now</span>
+          </button>
+        </div>
+
+        <div>
+          <img src="images/model.png" alt="" />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
